@@ -1,0 +1,1 @@
+export const baseURL = "https://olx-clone-backend-production.up.railway.app"

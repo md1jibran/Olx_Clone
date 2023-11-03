@@ -1,0 +1,14 @@
+.productDetailContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-detail-header{
+    background-color: rgb(226, 222, 222);
+    height: 70px;
+    width: 100%;
+}

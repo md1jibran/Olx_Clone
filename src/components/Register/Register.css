@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "CustomFont";
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+.cover {
+    background-color: white;
+    width: 80%;
+    height: 65%;
+    position: relative;
+    border-radius: .5em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+
+
+input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: .3em;
+    font-size: 1em;
+}
+
+
+.label {
+    border: none;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: left;
+    padding-left: .3em;
+    font-size: 1em;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.register-btn {
+    width: 40%;
+    padding: .5em;
+    font-size: 1em;
+    background-color: rgb(32, 177, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+}
+
+
+@media screen and (max-device-width: 480px) {
+    .page {
+        font-size: 1em;
+    }
+
+    input{
+        height: 2em;
+    }
+
+    .cover {
+        width: 70%;
+        height: 50%;
+    }
+}
+
+@media screen and (min-device-width: 480px) {
+    .page {
+        font-size: 1em;
+    }
+
+    .cover {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+
+@media screen and (min-device-width: 768px) {
+    .page {
+        font-size: 1.4em;
+    }
+
+    input{
+        height: 2.5em;
+    }
+
+    .cover {
+        width: 70%;
+        height: 50%;
+    }
+}
+
+
+@media screen and (min-device-width: 1024px) {
+    .page {
+        font-size: 1.4em;
+    }
+
+    input {
+        height: 2em;
+    }
+
+    .cover {
+        width: 40%;
+        height: 70%;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-height: 600px){
+    .page {
+        font-size: 1.4em;
+    }
+
+    input {
+        height: 1.5em;
+    }
+    .register-btn{
+        height: 1.5em;
+    }
+
+    .cover {
+        width: 40%;
+        height: 70%;
+    }
+}
+

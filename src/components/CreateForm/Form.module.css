@@ -1,0 +1,85 @@
+.CreateFormheading {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainFormContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.Formcontainer {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+}
+
+.FormsubHeading {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 15px
+}
+
+.Formtitle {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 0px 3px;
+}
+
+.FormtextArea {
+    width: 100%;
+    height: 75px;
+    margin: 0px 0px 15px;
+    border: 2px solid #cccccc;
+    border-radius: 0px;
+}
+
+.FormcameraIcon {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 2px solid #cccccc;
+}
+
+.Formbutton {
+    text-align: center;
+    margin: 20px 0px 0px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7c8c92;
+    background-color: #d9dfe2;
+    border: 0px;
+}
+
+.FormproductPic {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #cccccc;
+}
+
+.FormimageContainer {
+    position: relative;
+}
+
+.FormcrossIcon {
+    position: absolute;
+    top: 9px;
+    left: 123px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mainFormContainer {
+        width: 40%;
+    }
+
+    .FormtextArea {
+        width: 55%;
+        margin: 0px 0px 15px;
+        border: 2px solid #cccccc;
+    }
+}

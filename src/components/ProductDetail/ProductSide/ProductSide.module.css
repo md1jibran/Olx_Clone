@@ -1,0 +1,26 @@
+.container {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.priceText {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.descText {
+    font-size: 16px;
+}
+
+.bottomText {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.locationText {
+    font-size: 13px;
+}

@@ -1,0 +1,45 @@
+.container {
+    font-family: sans-serif;
+    background-color: #f3f4f6;
+}
+.detailButtonContainer{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0;
+}
+.detailButton{
+    width: 40%;
+    height: 2.5em;
+    border: 0;
+    font-size: 20px;
+    border-radius: 7px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 20px;
+    background-color: #035d67;
+    color: aliceblue;
+}
+
+.detailButton:hover{
+    background-color: #3a6e74;
+}
+@media only screen and (min-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .productMain {
+        width: 70%
+    }
+
+    .productSide {
+        width: 30%
+    }
+
+    .container {
+        padding: 20px 100px;
+        display: flex;
+        flex-direction: row;
+    }
+}

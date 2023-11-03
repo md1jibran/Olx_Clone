@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "CustomFont";
+}
+
+
+.login-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+
+.login-cover {
+    background-color: white;
+    width: 80%;
+    height: 47%;
+    position: relative;
+    border-radius: .5em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.login-head{
+    font-size: 4em;
+}
+
+
+
+.login-input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    height: 2.7rem;
+    font-size: 2em;
+}
+
+.login-input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.login-btn {
+    width: 40%;
+    background-color: rgb(32, 177, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    height: 3em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+}
+
+.login-register{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(42, 41, 41);
+}
+
+
+
+@media only screen and (min-device-width: 37em) {
+    .login-page {
+        font-size: 1.2em;
+    }
+
+    .login-input {
+        height: 2em;
+    }
+
+        .login-head {
+            font-size: 3em;
+        }
+
+    .login-btn{
+        font-size: 2em;
+        height: 2em;
+    }
+
+
+    .login-cover {
+        width: 60%;
+        height: 45%;
+    }
+}
+
+
+@media only screen and (min-device-width: 64em) {
+    .login-page {
+        font-size: .75em;
+    }
+    .login-input{
+        height: 1.67em;
+    }
+
+    .login-head{
+        font-size: 4em;
+    }
+
+    .login-btn {
+        font-size: 2em;
+        height: 2em;
+    }
+    
+
+    .login-cover {
+        width: 41%;
+        height: 50%;
+    }
+}

@@ -1,0 +1,206 @@
+.headerParentDiv{
+    padding: 10px;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.headerChildDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+    color: #002f34;
+}
+.header-info {
+    padding-right: 2em;
+}
+
+
+.placeSearch{
+    width: 16em;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+    background-color: whitesmoke
+}
+
+.placeSearch ::selection{
+    border-color: #23e5db;
+    outline-color:#23e5db
+}
+
+.placeSearch input, .productSearch input{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke
+}
+
+.productSearch {
+    width: 35em;
+    height: 48px;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke
+}
+
+.productSearch .input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.productSearch .input input {
+    border-color: transparent;
+    outline-color: transparent;
+    width: 100%;
+    align-items: center;
+}
+
+.productSearch .searchAction {
+    min-width: 48px;
+    height: 48px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    background-color: #002f34;
+    border-radius: 0 4px 4px 0;
+}
+
+.productSearch .searchAction svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+}
+
+.language {
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.language span {
+    font-size: 15px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+
+.span {
+    text-decoration: none;
+    font-size: 16px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+
+.sellMenu {
+    position: relative;
+    cursor: pointer;
+    padding: 1em 2.2em;
+    border: 7px solid rgb(173, 173, 15);
+    border-radius: 25%;
+}
+
+.sellMenu .all {
+    fill: white;
+}
+
+.sellMenu .top {
+    fill: #23e5db;
+}
+
+.sellMenu .left {
+    fill: #ffce32;
+}
+
+.sellMenu .right {
+    fill: #3a77ff;
+}
+
+.sellMenu .sellMenuContent {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #002f34;
+}
+
+.sellMenu .sellMenuContent span {
+    margin-left: 5px;
+}
+
+.login-header-button{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .placeSearch,
+    .productSearch {
+        display: none;
+    }
+
+    .headerChildDiv{
+        padding: 0  1em;
+    }
+}
+
+
+
+@media only screen and (min-width:700px) and ( max-width: 1024px){
+    .placeSearch,
+        .language{
+            display:none;
+        }
+
+    .productSearch {
+        width: 25em;
+
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .placeSearch {
+        width: 10em;
+    }
+
+    .productSearch {
+        width: 30em;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    .placeSearch {
+        width: 12em;
+    }
+    
+    .productSearch {
+        width: 34em;
+    }
+
+    .headerChildDiv {
+        padding: 0 6em;
+    }
+}
